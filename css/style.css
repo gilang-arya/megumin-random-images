@@ -1,0 +1,158 @@
+/* === Global Styles === */
+body {
+  background-image: url(../assets/bg.png);
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+/* === Navigation === */
+nav {
+  display: flex;
+  padding: 1.5em 3em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #711e39;
+}
+
+nav li .active {
+  color: #711e39;
+}
+
+/* === Container Layout === */
+.container {
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Preview Image === */
+#preview-image img {
+  border: 3px solid #c10000;
+  border-radius: 30px;
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === Button Area === */
+#button-area {
+  max-width: 400px;
+  padding: 2em;
+  text-align: left;
+}
+
+#button-area h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #711e39;
+}
+
+#button-area p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-right: 15px;
+  margin-top: 15px;
+  padding: 0.8em 2.5em;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+#random-btn {
+  background-color: #992831;
+  color: #fff;
+}
+
+#random-btn:hover {
+  background-color: #751e25;
+}
+
+#download-btn {
+  background-color: #36757a;
+  color: #fff;
+}
+
+#download-btn:hover {
+  background-color: #255053;
+}
+
+/* === Gallery === */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5em;
+  padding: 2em;
+  justify-items: center;
+}
+
+#gallery img {
+  border: 3px solid #c10000;
+  border-radius: 20px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#gallery img:hover {
+  transform: scale(1.03);
+}
+
+#title-area {
+  width: 100%;
+  padding: 0 1em;
+}
+
+#title-area h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #711e39;
+}
+
+#random-gallery {
+  background-color: #992831;
+  color: #fff;
+}
+
+#random-gallery:hover {
+  background-color: #751e25;
+}
