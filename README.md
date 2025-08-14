@@ -1,9 +1,9 @@
-# Megumin Random Image
+# Megumin Randomizer
 
 <table>
   <tr>
     <td align="center">
-      <img src="./preview.png" alt="Sway Screenshot" />
+      <img src="./preview.png" alt="Screenshot" />
     </td>
   </tr>
 </table>
@@ -17,6 +17,7 @@ This is a website to generate random images of megumin characters from the Konos
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 **API:**
+
 - [waifu.pics](https://waifu.pics/)
 
 ## 🚀 Getting Started
@@ -24,13 +25,13 @@ This is a website to generate random images of megumin characters from the Konos
 Clone the repository:
 
 ```bash
-git clone https://github.com/garpra/megumin-image-web
+git clone https://github.com/garpra/megumin-randomizer
 ```
 
 Navigate to the project folder:
 
 ```bash
-cd megumin-image-web
+cd megumin-randomizer
 ```
 
 Open `index.html` in your browser or use Live Server.

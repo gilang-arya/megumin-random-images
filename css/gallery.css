@@ -1,0 +1,135 @@
+@import url("./style.css");
+
+/* === Title Area === */
+#title-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1em;
+}
+
+#title-area h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* === Random Gallery Button === */
+#random-gallery {
+  background-color: var(--color-random-btn);
+  color: #fff;
+}
+
+#random-gallery:hover {
+  background-color: var(--color-random-btn-hover);
+}
+
+/* === Gallery Grid === */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5em;
+  width: 100%;
+  padding: 1em 0;
+}
+
+#gallery a {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  border: 3px solid var(--color-border-btn);
+  box-shadow: var(--box-shadow);
+}
+
+#gallery a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery a img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* === Lightbox === */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.lightbox .close:hover {
+  color: #ff4d6d;
+}
+
+/* === Responsive Breakpoints === */
+@media (max-width: 992px) {
+  #gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #gallery a {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+
+  #gallery a {
+    height: 250px;
+  }
+
+  #title-area {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  #title-area h1 {
+    font-size: 1.8em;
+  }
+
+  #random-gallery {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #title-area h1 {
+    font-size: 1.5em;
+  }
+}
