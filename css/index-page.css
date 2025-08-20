@@ -1,0 +1,74 @@
+/* === Index Page Styles === */
+
+/* Preview Image Area */
+#preview-image {
+  width: 100%;
+  max-width: 350px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 3px solid var(--color-primary);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+#preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+#preview-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Button Area / Info */
+#button-area {
+  max-width: 400px;
+  padding: 2rem;
+  text-align: left;
+  background: var(--bg-card);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(229, 62, 62, 0.1);
+}
+
+#button-area h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+#button-area p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--color-text-light);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Specific Buttons */
+#random-btn {
+  background: linear-gradient(135deg, var(--color-random-btn), var(--color-primary-dark));
+  color: #fff;
+  font-weight: 600;
+}
+
+#random-btn:hover {
+  background: linear-gradient(135deg, var(--color-random-btn-hover), var(--color-primary-dark));
+  box-shadow: 0 6px 20px rgba(229, 62, 62, 0.2);
+}
+
+#download-btn {
+  background: linear-gradient(135deg, var(--color-download-btn), var(--color-download-btn-hover));
+  color: #fff;
+  font-weight: 600;
+}
+
+#download-btn:hover {
+  background: linear-gradient(135deg, var(--color-download-btn-hover), #1a365d);
+  box-shadow: 0 6px 20px rgba(49, 130, 206, 0.3);
+}

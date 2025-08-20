@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megumin Randomizer</title>
+
+    <!-- Preconnect untuk optimasi font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/gallery-page.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Megumin</h1>
+      <ul>
+        <li><a href="./index.html">Random</a></li>
+        <li><a class="active" href="./gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- Kontainer utama gallery -->
+    <div class="container">
+      <!-- Judul dan tombol random gallery -->
+      <div id="title-area">
+        <h1>Megumin Gallery</h1>
+        <button id="random-gallery">Random</button>
+      </div>
+
+      <!-- Gallery images akan di-inject oleh JS -->
+      <div id="gallery"></div>
+    </div>
+
+    <!-- Modular JavaScript -->
+    <script type="module" src="./js/gallery.js"></script>
+  </body>
+</html>

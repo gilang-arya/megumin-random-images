@@ -1,0 +1,145 @@
+/* === Responsive Design === */
+
+/* Tablet (992px and below) */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  /* Index page adjustments */
+  #button-area {
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  #preview-image {
+    max-width: 300px;
+    height: 380px;
+  }
+
+  /* Gallery page adjustments */
+  #gallery {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  #gallery a {
+    height: 180px;
+  }
+}
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  nav h1 {
+    font-size: 1.3rem;
+  }
+  
+  nav ul {
+    gap: 1rem;
+  }
+  
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Index page adjustments */
+  #preview-image {
+    max-width: 280px;
+    height: 350px;
+  }
+  
+  #button-area h1 {
+    font-size: 1.8em;
+  }
+
+  /* Gallery page adjustments */
+  #gallery {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  #gallery a {
+    height: 200px;
+  }
+
+  #title-area {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  #title-area h1 {
+    font-size: 1.8rem;
+  }
+
+  #random-gallery {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .lightbox .close {
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+}
+
+/* Small mobile (480px and below) */
+@media (max-width: 480px) {
+  nav {
+    padding: 1rem 1rem;
+  }
+  
+  button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .container {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  /* Index page adjustments */
+  #preview-image {
+    max-width: calc(100vw - 10rem);
+    height: auto;
+    aspect-ratio: 3/4;
+    margin: 0 1rem;
+  }
+  
+  #button-area {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  
+  #button-area h1 {
+    font-size: 1.5em;
+  }
+
+  /* Gallery page adjustments */
+  #gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  #title-area h1 {
+    font-size: 1.5rem;
+  }
+  
+  .lightbox img {
+    max-width: 95%;
+    max-height: 85%;
+  }
+}

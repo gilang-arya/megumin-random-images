@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megumin Randomizer</title>
+
+    <!-- Preconnect untuk optimasi font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Reset CSS untuk memastikan styling konsisten di semua browser -->
+    <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/index-page.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Megumin</h1>
+      <ul>
+        <li><a class="active" href="./index.html">Random</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- Kontainer utama -->
+    <div class="container">
+      <!-- Area gambar preview -->
+      <div id="preview-image">
+        <img
+          id="single-img"
+          src="https://i.waifu.pics/lMM0KHo.png"
+          alt="Megumin"
+        />
+      </div>
+
+      <!-- Area tombol dan deskripsi -->
+      <div id="button-area">
+        <h1>Random Image</h1>
+        <p>
+          "My name is Megumin! The arch-wizard who casts Explosion!" — Megumin
+        </p>
+        <button id="random-btn">Random</button>
+        <button id="download-btn">Download</button>
+      </div>
+    </div>
+
+    <!-- Modular JavaScript -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
